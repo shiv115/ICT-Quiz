@@ -1,0 +1,59 @@
+<!-- In dit bestand staat de HTML-code voor je Quiz. Je kunt deze code aanpassen. -->
+
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Quiz windesheim ally!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/quiz.css">
+    </head>
+    <body>
+        <h1>Welkom bij de leukste quiz!!</h1>
+        <p id="llr">leerlingnummer: <input type="text" name="studentnummer" placeholder="s1234567" pattern=".{1,8}" required title="1 to 8 characters" id="studentnummer"> <br><br>
+        <button id="checkbutton">Controleer studentnummer</button></p>
+        <br><p id="showllr"></p>
+        <nav>
+            <button id="button-start">Start</button>
+            <button id="button-questions">Vragen</button>
+        </nav>
+        <main>
+            <div class="page" id="page-start">
+            <h2>Start!</h2>
+             <p>Welkom bij de Windesheim Ally quiz. 
+                <br> Voordat je met de quiz kan beginnen, moet je eerst inloggen met je leerlingnummer.
+                <br> Als je bent ingelogd word je naar de vragenpaginadoorgewezen
+                <br> Per vraag kan je maar één antwoord geven.
+                <br> Als je naar de volgende vraag wilt, klik je op volgende vraag.
+                <br> Er zijn in totaal twintig vragen.
+                <br> De vragen gaan over het vak ORI en de school
+                <br> Je score wordt per vraag geupdatet
+                <br> Aan het einde van de quiz wordt je totaalscore laten zien.
+                <br> Succes met de quiz!
+                 </p>
+           
+            </div>
+            
+            
+            
+            <div class="page" id="page-questions">
+                <p id="score"></p>
+                <h2 id="quiz_status">Vragen!</h2>
+                <div id="quizvraag"></div>
+                <button id="chA" class="button-answers"> A</button><br><br>
+                <button id="chB" class="button-answers"> B</button><br><br>
+                <button id="chC" class="button-answers"> C</button><br><br>
+                <button id="chD" class="button-answers"> D</button><br><br>
+
+            </div>
+            <div class="page" id="eindpagina">
+                 <h2>Je hebt de quiz voltooid, goedzo!</h2>
+                <h3 id="quiz_resultaat">R</h3>
+            </div>
+            
+        </main>
+        <script src="js/quiz.js"></script>
+    </body>
+</html>
